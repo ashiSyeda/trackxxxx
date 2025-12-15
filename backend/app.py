@@ -18,7 +18,7 @@ DB_FILE = os.getenv("SQLITE_FILE", "smart_gps.db")
 JWT_SECRET = os.getenv("JWT_SECRET", "change_this_secret")
 JWT_ALGORITHM = "HS256"
 JWT_EXP_MINUTES = int(os.getenv("JWT_EXP_MINUTES", "1440"))
-CORS_ORIGINS = ["http://localhost:8080", "http://localhost:3000", "http://localhost:5173", "http://192.168.100.5:8080"]
+CORS_ORIGINS = ["http://localhost:8080", "http://localhost:3000", "http://localhost:5173", "http://192.168.100.5:8080","https://trackxx.vercel.app"]
 
 app = Flask(__name__)
 
